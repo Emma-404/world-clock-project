@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"
-      integrity="sha512-XvDDOXNYp84l3IETKvzrmJlYUIMrii8o0PGutSneTeaJ14Xcg0MThfvViF0c2JMNKUtmUek6/AY9e/sY4AmiZg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
 
     <title>World Click - Emma BornBad</title>
   </head>
@@ -18,29 +13,34 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="" selected>Select a city...</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Auckland</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/Milan">Milano</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="date">May 19th 2025</div>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">4:49 <small>PM</small></div>
       </div>
-
-      <div class="city">
+      <div class="city" id="paris">
         <div>
-          <h2>Los Angeles</h2>
-          <div class="date">May 19th 2025</div>
+          <h2>Paris</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">4:49 <small>PM</small></div>
+        <div class="time"></div>
       </div>
     </div>
+
     <footer>
       This project was coded with 🤎 by
       <strong
