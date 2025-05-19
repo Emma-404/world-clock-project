@@ -17,7 +17,7 @@ function updateTime() {
   if (parisElement) {
     let parisDateElement = parisElement.querySelector(".date");
     let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Pairs");
+    let parisTime = moment().tz("Europe/Paris");
 
     parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
@@ -43,6 +43,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+   <a href="/">Get back</a>
   `;
 }
 
