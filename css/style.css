@@ -36,6 +36,7 @@ h2 {
 .container a:hover {
   color: white;
 }
+
 .city {
   display: flex;
   margin: 20px 0;
